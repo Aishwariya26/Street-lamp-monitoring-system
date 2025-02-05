@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Street Light Monitoring System</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  
+  <div id="particles-js"></div>
+
+  
+  <header class="header">
+    <div class="logo-container">
+      <div class="glowing-tube" id="glowing-tube"></div>
+    </div>
+    <h1>Street Light Monitoring System</h1>
+    <p class="tagline">Smart Monitoring for Smarter Streets</p>
+  </header>
+
+  
+  <section class="day-night-section">
+    <h2>Current Time Status</h2>
+    <p id="day-night-status">Loading...</p>
+  </section>
+
+  
+  <section class="hero-section">
+    <div class="hero-content">
+      <h2><i class="fa-solid fa-circle-dot"></i> Control Panel</h2>
+      <p>Monitor and interact with the streetlights in real time.</p>
+    </div>
+    <div class="animation electricity-animation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100" class="electricity-svg">
+        
+        <path class="electricity-path" d="M 10 10 Q 25 25 50 10 Q 75 25 90 50 Q 75 75 50 90 Q 25 75 10 50" />
+        <path class="electricity-path" d="M 20 20 Q 30 30 50 20 Q 70 30 90 60 Q 70 80 50 80 Q 30 70 20 50" />
+        <path class="electricity-path" d="M 30 30 Q 40 40 50 30 Q 60 40 70 50 Q 60 60 50 70 Q 40 60 30 50" />
+        <path class="electricity-path" d="M 40 40 Q 50 50 50 60 Q 50 70 40 80 Q 30 70 20 60 Q 30 50 40 40" />
+      </svg>
+    </div>
+  </section>
+
+  
+  <main>
+    <section class="light-status-section">
+      <h2>Light Status Overview</h2>
+      <div class="area-container">
+        
+        <div class="area" id="area1">
+          <h3>Area 1</h3>
+          <div class="light-card" id="light1">
+            <div class="light-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <div class="status-info">
+              <h3>Light 1</h3>
+              <p>Status: <span class="status-text">Loading...</span></p>
+            </div>
+          </div>
+          <div class="light-card" id="light2">
+            <div class="light-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <div class="status-info">
+              <h3>Light 2</h3>
+              <p>Status: <span class="status-text">Loading...</span></p>
+            </div>
+          </div>
+          <div class="light-card" id="light3">
+            <div class="light-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <div class="status-info">
+              <h3>Light 3</h3>
+              <p>Status: <span class="status-text">Loading...</span></p>
+            </div>
+          </div>
+          <div class="light-card" id="light4">
+            <div class="light-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <div class="status-info">
+              <h3>Light 4</h3>
+              <p>Status: <span class="status-text">Loading...</span></p>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="area" id="area2">
+          <h3>Area 2</h3>
+          <div class="light-card" id="light5">
+            <div class="light-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <div class="status-info">
+              <h3>Light 5</h3>
+              <p>Status: <span class="status-text">Loading...</span></p>
+            </div>
+          </div>
+          <div class="light-card" id="light6">
+            <div class="light-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <div class="status-info">
+              <h3>Light 6</h3>
+              <p>Status: <span class="status-text">Loading...</span></p>
+            </div>
+          </div>
+          <div class="light-card" id="light7">
+            <div class="light-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <div class="status-info">
+              <h3>Light 7</h3>
+              <p>Status: <span class="status-text">Loading...</span></p>
+            </div>
+          </div>
+          <div class="light-card" id="light8">
+            <div class="light-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <div class="status-info">
+              <h3>Light 8</h3>
+              <p>Status: <span class="status-text">Loading...</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="analytics-section">
+      <h2><i class="fa-solid fa-chart-line"></i> Real-Time Analytics</h2>
+      <canvas id="lightChart"></canvas>
+    </section>
+  </main>
+
+  
+  <footer>
+    <p>Designed with <i class="fa-solid fa-heart"></i> by Streetlight Team</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

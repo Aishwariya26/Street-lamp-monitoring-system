@@ -1,0 +1,200 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: radial-gradient(circle, #000000, #2c5364);
+}
+
+
+.header {
+    text-align: center;
+    padding: 40px;
+    color: #00ffdd;
+    text-shadow: 0 0 20px #00ffdd;
+}
+
+.logo-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.glowing-tube {
+    width: 120px;
+    height: 10px;
+    background: linear-gradient(to right, #ff00ff, #00ffff, #ffff00, #ff0000);
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 30px rgba(255, 255, 0, 0.7);
+    animation: glow-tube 2s infinite alternate;
+}
+
+@keyframes glow-tube {
+    0% {
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 30px rgba(255, 255, 0, 0.7);
+        background: linear-gradient(to right, #ff00ff, #00ffff, #ffff00, #ff0000);
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(255, 0, 0, 0.8), 0 0 40px rgba(0, 255, 0, 0.6);
+        background: linear-gradient(to right, #ff4500, #ffff00, #32cd32, #4169e1);
+    }
+}
+
+.header h1 {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    color: #c3f9f1;
+}
+
+
+.day-night-section {
+    text-align: center;
+    padding: 20px;
+    background: #2c5364;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.day-night-section h2 {
+    font-size: 2rem;
+    color: #ffe600;
+}
+
+#day-night-status {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    color: #ffe600;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+
+.electricity-svg {
+    width: 100%;
+    height: 100px;
+    animation: electricityAnimation 5s linear infinite;
+}
+
+.electricity-path {
+    fill: none;
+    stroke: #00ffdd;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+@keyframes electricityAnimation {
+    0% {
+        stroke-dasharray: 0, 100;
+    }
+    50% {
+        stroke-dasharray: 50, 100;
+    }
+    100% {
+        stroke-dasharray: 100, 100;
+    }
+}
+
+
+.light-status-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.area-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.area {
+    width: 45%;
+}
+
+.light-card {
+    background: linear-gradient(135deg, #00ffdd, #007fff);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.light-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+.light-icon {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: #ffe600;
+}
+
+.status-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.status-text {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+
+.faulted {
+    background: linear-gradient(135deg, #ff4d4d, #ff0000);
+}
+
+
+.analytics-section {
+    padding: 40px;
+    text-align: center;
+}
+
+canvas {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #0f2027;
+    color: #00ffdd;
+}
